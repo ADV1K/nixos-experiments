@@ -5,8 +5,8 @@
   networking.useNetworkd = true;
 
   # Standard dhcp for the primary interface
-  systemd.network.networks."10-ens18" = {
-    matchConfig.Name = "ens18";
+  systemd.network.networks."10-wired" = {
+    matchConfig.Type = "ether";
     networkConfig.DHCP = "yes";
   };
 
