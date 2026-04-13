@@ -3,7 +3,7 @@
     disk = {
       main = {
         type = "disk";
-        device = "/dev/vda"; # Default for Proxmox virtio
+        device = "/dev/sda"; # Default for Proxmox virtio
         content = {
           type = "gpt";
           partitions = {

@@ -3,7 +3,6 @@
 {
   # Shell setup
   programs.starship.enable = true;
-  programs.zoxide.enable = true;
 
   environment.systemPackages = with pkgs; [
     # Shell

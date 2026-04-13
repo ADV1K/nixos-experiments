@@ -24,15 +24,5 @@
         ./modules/shell.nix
       ];
     };
-
-    # The automated installer ISO
-    nixosConfigurations.installer = nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
-      specialArgs = { inherit inputs; };
-      modules = [
-        (nixpkgs + "/nixos/modules/installer/cd-dvd/installation-cd-minimal.nix")
-        ./hosts/capybara/installer-iso.nix
-      ];
-    };
   };
 }
